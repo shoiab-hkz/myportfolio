@@ -26,10 +26,10 @@ export const HeroSection = () => {
   ];
 
   const achievements = [
-    { number: "1+", label: "Years in Production", icon: <Shield className="h-3 w-3" /> },
-    { number: "15+", label: "Projects Delivered", icon: <TrendingUp className="h-3 w-3" /> },
+    { number: "2+", label: "Years in Production", icon: <Shield className="h-3 w-3" /> },
+    { number: "8+", label: "Projects Delivered", icon: <TrendingUp className="h-3 w-3" /> },
     { number: "100%", label: "Client Satisfaction", icon: <Award className="h-3 w-3" /> },
-    { number: "15+", label: "Projects completed", icon: <Zap className="h-3 w-3" /> }
+    { number: "8+", label: "Projects completed", icon: <Zap className="h-3 w-3" /> }
   ];
 
   useEffect(() => {
@@ -104,14 +104,14 @@ export const HeroSection = () => {
             </motion.div>
 
             <motion.h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              <span className="block text-foreground">I'm Sahil</span>
+              <span className="block text-foreground">I'm Shoaib Hakimzada</span>
               <motion.span className="block bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2" animate={{ backgroundPosition: ['0%', '100%', '0%'] }} transition={{ duration: 8, repeat: Infinity }} style={{ backgroundSize: '200% 100%' }}>
                 Full-Stack Engineer
               </motion.span>
             </motion.h1>
 
             <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              I build <span className="text-primary font-semibold">high-performance web applications</span> that drive business growth. Specializing in React, Node.js, and scalable architecture for startups and enterprises.
+              I build <span className="text-primary font-semibold">high-performance web applications</span> high-converting e-commerce websites, specializing in Shopify development, automation, WordPress, and SEO to help businesses grow online.
             </motion.p>
 
             <motion.div className="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
@@ -151,7 +151,7 @@ export const HeroSection = () => {
 
             <motion.div className="mt-6 text-center lg:text-left" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
               <div className="text-sm text-muted-foreground">
-                🚀 <span className="text-primary font-semibold">Available Immediately</span> for Full-Stack and Frontend roles
+                🚀 <span className="text-primary font-semibold">Available Immediately</span> for Shopify, WordPress, and SEO roles
               </div>
             </motion.div>
           </div>
@@ -185,8 +185,8 @@ export const HeroSection = () => {
                             transition-opacity duration-150 ease-in-out
                             ${line.includes("import") ? "text-purple-400 font-semibold" : 
                               line.includes("const") || line.includes("new") ? "text-blue-400 font-semibold" :
-                              line.includes("React") || line.includes("Node.js") || line.includes("TypeScript") ? "text-cyan-400" :
-                              line.includes("FullStackDeveloper") ? "text-emerald-400 font-semibold" :
+                              line.includes("ُShopify") || line.includes("Wordpress") || line.includes("Webflow") ? "text-cyan-400" :
+                              line.includes("Shopify Developer | SEO & Automation") ? "text-emerald-400 font-semibold" :
                               line.includes("//") ? "text-muted-foreground italic" :
                               line.includes("await") || line.includes("connect") ? "text-yellow-400" :
                               line.includes("'") ? "text-amber-400" : 

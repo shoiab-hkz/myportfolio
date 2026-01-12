@@ -8,32 +8,41 @@ export const AboutSection = () => {
   const [counter, setCounter] = useState(0);
 
   const achievements = [
-    { number: "15+", label: "Projects", icon: <Briefcase className="h-5 w-5" />, suffix: "" },
-    { number: "1", label: "Years Exp", icon: <Calendar className="h-5 w-5" />, suffix: "+" },
-    { number: "99", label: "Success", icon: <Target className="h-5 w-5" />, suffix: "%" },
-    { number: "10", label: "Clients", icon: <User className="h-5 w-5" />, suffix: "+" }
+    { number: "8", label: "Projects", icon: <Briefcase className="h-5 w-5" />, suffix: "" },
+    { number: "2+", label: "Years Exp", icon: <Calendar className="h-5 w-5" />, suffix: "+" },
+    { number: "100%", label: "Success", icon: <Target className="h-5 w-5" />, suffix: "%" },
+    { number: "8", label: "Clients", icon: <User className="h-5 w-5" />, suffix: "+" }
   ];
 
   const techStack = [
-    { category: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "Tailwind"] },
-    { category: "Backend", items: ["Node.js", "Express", "Java", "Python"] },
-    { category: "Cloud", items: ["AWS", "Docker", "Vercel", "MongoDB"] }
+    { category: "Shopify", items: ["Convertion Rate Optimization","Page speed optimization","Content Managment", "Order forwarding automation", "Inventory Sync automation", "Product listing automation", "HTML", "Tailwind"] },
+    { category: "Wordpress", items: ["Conent Managment", "Design and improve UI&UX", "PHP", "MySQL"] },
+    { category: "SEO", items: ["Keyword finding", "Improve E-E-A-T", "Improve DA (Domain Authority",] }
   ];
 
-  const features = ["Full-stack expertise", "Clean, maintainable code", "Performance optimization", "Agile methodology", "24/7 support", "Timely delivery"];
+  const features = [
+  "Shopify & CMS expertise",
+  "Clean, maintainable builds",
+  "SEO & performance optimization",
+  "E-commerce automation",
+  "Responsive design",
+  "Timely delivery"
+];
+
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, href: "https://www.github.com/sahilmd01" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/codewithkinu" },
+    { icon: <Github className="h-5 w-5" />, href: "https://github.com/shoiab-hkz" },
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/in/sayed-shoaib-hakimzada-56b7911b9/" },
     { icon: <Twitter className="h-5 w-5" />, href: "#" },
-    { icon: <Mail className="h-5 w-5" />, href: "mailto:sahilmd.dev@gmail.com" }
+    { icon: <Mail className="h-5 w-5" />, href: "mailto:shoaibhakimzad@gmail.com" }
   ];
 
-  const tabContent = {
-    personal: "Passionate about creating digital solutions that make a difference. When I'm not coding, I'm exploring new technologies, contributing to open-source, and mentoring aspiring developers.",
-    professional: "With 1+ years in full-stack development, I've delivered 15+ successful projects using modern technologies. I specialize in scalable architecture and performance optimization.",
-    approach: "I believe in clean code, thorough testing, and user-centered design. My process emphasizes collaboration, agile methodologies, and continuous improvement."
-  };
+ const tabContent = {
+  personal: "Passionate about building and optimizing websites that help businesses grow. When I'm not working on client projects, I explore new e-commerce trends, automation tools, and SEO strategies.",
+  professional: "With 2+ years of experience, I've worked with multiple CMS platforms including Shopify, WordPress, Webflow, Wix, and Magento, delivering scalable and conversion-focused websites for diverse clients.",
+  approach: "I focus on clean, maintainable builds, performance optimization, and SEO best practices. My approach emphasizes clear communication, efficient workflows, and results-driven solutions."
+};
+
 
   useEffect(() => {
     const handleMouseMove = (e) => setMousePosition({ x: e.clientX, y: e.clientY });
@@ -49,8 +58,8 @@ export const AboutSection = () => {
   // Programmatic download function
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Sahil-resume.pdf'; // Must be in public folder
-    link.download = 'Sahil-resume.pdf';
+    link.href = '/MyCV.pdf'; // Must be in public folder
+    link.download = 'MyCV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -82,8 +91,9 @@ export const AboutSection = () => {
             <span className="block text-primary animate-pulse">Ideas Into Reality</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Building digital experiences that combine <span className="text-primary font-semibold">innovation</span>, <span className="text-primary font-semibold">performance</span>, and <span className="text-primary font-semibold">elegance</span>
-          </p>
+  Creating scalable e-commerce experiences with <span className="text-primary font-semibold">Shopify</span>, <span className="text-primary font-semibold">automation</span>, and <span className="text-primary font-semibold">SEO</span>
+</p>
+
         </div>
 
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 md:gap-12">
@@ -111,8 +121,8 @@ export const AboutSection = () => {
 
                   {/* Achievements */}
                   <div className="flex-1 text-center md:text-left">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">MD Sahil</h2>
-                    <p className="text-primary text-base sm:text-lg font-semibold mb-3 sm:mb-4">Full Stack Developer</p>
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2">Shoaib Hakimzada</h2>
+                    <p className="text-primary text-base sm:text-lg font-semibold mb-3 sm:mb-4">Shopify Developer | SEO & Automation</p>
                     <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
                       {achievements.map((achievement, index) => (
                         <div key={index} className={`p-2 sm:p-3 rounded-xl bg-background/50 border border-border transition-all duration-300 hover:scale-105 hover:border-primary/30 ${counter === index ? 'bg-primary/10 border-primary/50' : ''}`}>
@@ -163,7 +173,7 @@ export const AboutSection = () => {
             {/* Tech Stack */}
             <div className="bg-card/50 border border-border rounded-3xl p-6 sm:p-8 backdrop-blur-xl shadow-2xl transition-all duration-500 hover:shadow-3xl hover:border-primary/40 hover:bg-card/60">
               <h3 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3">
-                <Code className="h-4 sm:h-6 w-4 sm:w-6 text-primary" />Tech Stack Overview
+                <Code className="h-4 sm:h-6 w-4 sm:w-6 text-primary" />E-Commerce Tech Stack
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {techStack.map((stack, index) => (
@@ -175,7 +185,7 @@ export const AboutSection = () => {
                     <div className="space-y-1 sm:space-y-2">
                       {stack.items.map((item, itemIndex) => (
                         <div key={itemIndex} className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse" />{item}
+                          <div className="w-1 h-1 bg-primary rounded-full animate-pulse text-left"  />{item}
                         </div>
                       ))}
                     </div>

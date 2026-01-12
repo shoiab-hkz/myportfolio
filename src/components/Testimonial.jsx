@@ -11,31 +11,32 @@ export const TestimonialSection = () => {
   const isInView = useInView(ref, { once: true });
 
   const testimonials = [
-    {
-      id: 1,
-      name: "Alex Johnson",
-      role: "Product Director at TechCorp",
-      content: `Working with Sahil was seamless from day one. Not only did they deliver a full-stack solution ahead of schedule, but they also communicated clearly throughout the project. It's rare to find a developer who understands both the tech and the business side so well`,
-      rating: 5,
-      image: "/testimonials/alex-johnson.png"
-    },
-    {
-      id: 2,
-      name: "Maria Chen",
-      role: "Senior UX Designer at DesignHub",
-      content: `I've reviewed hundreds of portfolios, and his work is truly exceptional. Tway the animations guide attention while maintaining performance is masterful. The gradient elements add depth without overwhelming.`,
-      rating: 5,
-      image: "/testimonials/maria-chen.png"
-    },
-    {
-      id: 3,
-      name: "David Wilson",
-      role: "CTO at Startup Ventures",
-      content: `From wireframes to deployment, Sahil owned the entire stack with confidence and creativity. The final product is fast, reliable, and looks incredible. I wouldn't hesitate to work with them again.`,
-      rating: 5,
-      image: "/testimonials/David Wilson.png"
-    },
-  ];
+  {
+    id: 1,
+    name: "Fariba Nawa",
+    role: "Founder & Photographer",
+    content: `The website redesign exceeded my expectations. He completely transformed the UI and UX, managed all of the content, and created a clean, elegant experience that truly reflects my brand. The new structure is clearer, faster, and much more engaging for visitors. I highly recommend his work.`,
+    rating: 5,
+    image: "/testimonials/faribanawa.png"
+  },
+  {
+    id: 2,
+    name: "Diana",
+    role: "Wedding Photographer",
+    content: `Working with him was a great experience. He improved the overall UI and UX of my website and focused heavily on conversion optimization. The site now feels more modern, intuitive, and professional, and I’ve noticed better engagement since the changes.`,
+    rating: 5,
+    image: "/testimonials/logo-1.svg"
+  },
+  {
+    id: 3,
+    name: "GSRO Organization",
+    role: "Non-Profit Organization",
+    content: `Our website had serious technical issues, including server problems, malware, broken plugins, and content management challenges. He resolved all of these issues, secured the website, improved performance, and successfully integrated our donation campaign. His support was reliable, professional, and highly effective.`,
+    rating: 5,
+    image: "/testimonials/0-1-2.png"
+  }
+];
+
 
   useEffect(() => {
     const handleResize = () => {

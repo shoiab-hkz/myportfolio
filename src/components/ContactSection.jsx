@@ -131,12 +131,12 @@ export const ContactSection = () => {
                   <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Email</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground"></p>
                   <a
-                    href="mailto:codewithkinu@gmail.com"
+                    href="mailto:shoaibhakimzad@gmail.com"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    codewithkinu@gmail.com
+                    Shoaibhakimzad@gmail.com
                   </a>
                 </div>
               </div>
@@ -146,12 +146,12 @@ export const ContactSection = () => {
                   <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Phone</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground"></p>
                   <a
-                    href="tel:+919315145594"
+                    href="tel:+93701576136"
                     className="text-sm sm:text-base font-medium hover:text-primary transition-colors"
                   >
-                    +91 9315145594
+                    +93701576136
                   </a>
                 </div>
               </div>
@@ -161,9 +161,9 @@ export const ContactSection = () => {
                   <MapPin className="h-4 w-4 sm:h-5 sm:w-5" />
                 </div>
                 <div>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Location</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground"></p>
                   <span className="text-sm sm:text-base font-medium">
-                    Bengaluru, Karnataka India
+                    Herat, Afghanistan
                   </span>
                 </div>
               </div>
@@ -176,7 +176,7 @@ export const ContactSection = () => {
                   {
                     icon: Linkedin,
                     label: "LinkedIn",
-                    url: "https://www.linkedin.com/in/codewithkinu",
+                    url: "https://www.linkedin.com/in/sayed-shoaib-hakimzada-56b7911b9/",
                   },
                   {
                     icon: Twitter,
@@ -186,13 +186,9 @@ export const ContactSection = () => {
                   {
                     icon: Github,
                     label: "GitHub",
-                    url: "https://github.com/Sahilmd01",
+                    url: "https://github.com/shoiab-hkz",
                   },
-                  {
-                    icon: Instagram,
-                    label: "Instagram",
-                    url: "https://www.instagram.com/dubbinut",
-                  },
+                  
                 ].map((social, index) => (
                   <a
                     key={index}
@@ -222,7 +218,7 @@ export const ContactSection = () => {
                   htmlFor="name"
                   className="text-xs sm:text-sm font-medium text-muted-foreground"
                 >
-                  Your Name
+                  
                 </label>
                 <input
                   type="text"
@@ -241,7 +237,7 @@ export const ContactSection = () => {
                   htmlFor="email"
                   className="text-xs sm:text-sm font-medium text-muted-foreground"
                 >
-                  Your Email
+                 
                 </label>
                 <input
                   type="email"
@@ -260,7 +256,7 @@ export const ContactSection = () => {
                   htmlFor="message"
                   className="text-xs sm:text-sm font-medium text-muted-foreground"
                 >
-                  Your Message
+                 
                 </label>
                 <textarea
                   id="message"

@@ -28,12 +28,13 @@ const WelcomeScreen = ({ onWelcomeComplete }) => {
   };
 
   const currentColors = colors[theme] || colors.dark;
-  const portfolioUrl = "www.devlyhub.in";
+  const portfolioUrl = "www.shoaibhakimzada.com";
   const welcomeMessages = [
-    "Crafting digital experiences",
-    "Software Engineer",
-    "Full-stack development"
-  ];
+  "E-commerce development",
+  "Shopify Developer",
+  "SEO & Automation"
+];
+
 
   useEffect(() => {
     const phase1 = setTimeout(() => setPhase(1), 800);
