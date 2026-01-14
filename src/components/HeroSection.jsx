@@ -9,11 +9,11 @@ export const HeroSection = () => {
   const [displayedCode, setDisplayedCode] = useState("");
 
   const codeSnippets = [
-    "import { FullStackDeveloper } from 'sahil.dev';",
+    "import { Shopify & Wordpress Developer | SEO & Automation } from 'Shoaib Hakimzad';",
     "",
-    "const developer = new FullStackDeveloper({",
+    "const developer = new Shopify & Wordpress Developer | SEO & Automation({",
     "  name: 'Shoaib',",
-    "  stack: ['Shopify', 'Wordpress', 'Automation', 'Python', 'Java script'],",
+    "  stack: ['Shopify', 'Wordpress', 'Automation', 'Python', 'JavaScript'],",
     "  focus: 'Building scalable E-commerce stores',",
     "  status: 'Open to new opportunities'",
     "});",
@@ -111,7 +111,7 @@ export const HeroSection = () => {
             </motion.h1>
 
             <motion.p className="text-lg sm:text-xl text-muted-foreground mt-6 leading-relaxed max-w-2xl" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
-              I build <span className="text-primary font-semibold">high-performance web applications</span> high-converting e-commerce websites, specializing in Shopify development, automation, WordPress, and SEO to help businesses grow online.
+              I build <span className="text-primary font-semibold">high-converting e-commerce websites,</span>  specializing in Shopify development, automation, WordPress, and SEO to help businesses grow online.
             </motion.p>
 
             <motion.div className="grid grid-cols-2 sm:grid-cols-4 gap-4 my-8" variants={{ hidden: { y: 30, opacity: 0 }, visible: { y: 0, opacity: 1, transition: { duration: 0.8 } } }}>
