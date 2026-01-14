@@ -14,7 +14,7 @@ export const TestimonialSection = () => {
   {
     id: 1,
     name: "Fariba Nawa",
-    role: "Founder & Photographer",
+    role: "Founder & Journalist",
     content: `The website redesign exceeded my expectations. He completely transformed the UI and UX, managed all of the content, and created a clean, elegant experience that truly reflects my brand. The new structure is clearer, faster, and much more engaging for visitors. I highly recommend his work.`,
     rating: 5,
     image: "/testimonials/faribanawa.png"
